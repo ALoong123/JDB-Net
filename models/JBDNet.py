@@ -211,7 +211,7 @@ class DWF(nn.Module):
         return fusion_1_2
 
 
-class JDBNet(nn.Module):
+class JBDNet(nn.Module):
     def __init__(self):
         super().__init__()
         res2net = res2net50_v1b_26w_4s(pretrained=True)
@@ -332,22 +332,3 @@ class JDBNet(nn.Module):
         # return out, pre1, pre2, pre3, pre4, pre5
 
 
-if __name__ == "__main__":
-    import torch
-    import torchvision
-    from thop import profile
-
-    model = JDBNet()
-    image = torch.randn((1, 3, 256, 256))
-
-    flops, params = profile(model, (image,))
-
-    print(f'flops:{flops},params:{params}')
-    print('flops:%.2f M ,params: %.2f M' %(flops/1000000.0,params/1000000.0,))
-    # print(image.shape)
-
-    model1 = BIII(64, 64, 64)
-    toral_params = sum(p.numel() for p in model1.parameters())
-
-    print(toral_params/1000000.0)
-    # out = model(image)
