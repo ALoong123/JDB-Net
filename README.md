@@ -17,7 +17,7 @@ Accurate polyp segmentation plays a vital role in the early diagnosis of colorec
 ### 2.2. Framework Overview
 
 <p align="center">
-    <img src="imgs/JDB-Net.png"/> <br />
+    <img src="imgs/JBD-Net.png"/> <br />
     <em> 
     Fig. 1. Structure of JBD-Net
     </em>
@@ -68,5 +68,6 @@ The training and testing experiments are conducted using [PyTorch](https://githu
    - Just enjoy it!
 
 ## 4. License
+
 
 The source code is free for research and education use only. Any comercial use should get formal permission first.
