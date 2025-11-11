@@ -49,7 +49,7 @@ The training and testing experiments are conducted using [PyTorch](https://githu
 
    Note that JDB-Net is only tested on Ubuntu OS with the following environments.  It may work on other operating systems as well but we do not guarantee that it will.
 
-   - Creating a virtual environment in terminal: `conda create -n JDBNet python=3.10`.
+   - Creating a virtual environment in terminal: `conda create -n JBDNet python=3.10`.
    - Installing necessary packages: `pip install -r requirements.txt`
 
 2. Downloading necessary data:
@@ -71,3 +71,4 @@ The training and testing experiments are conducted using [PyTorch](https://githu
 
 
 The source code is free for research and education use only. Any comercial use should get formal permission first.
+
