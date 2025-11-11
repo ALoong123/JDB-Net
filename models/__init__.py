@@ -1,5 +1,5 @@
 
-from .JDBNet import JDBNet
+from .JBDNet import JBDNet
 
 
 
