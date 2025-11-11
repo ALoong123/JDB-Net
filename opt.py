@@ -33,8 +33,8 @@ parse.add_argument('--gpu', type=str, default='0')
 # parse.add_argument('--load_ckpt', type=str, default=None)
 parse.add_argument('--load_ckpt', type=str, default='bestIou_ck_131')
 
-parse.add_argument('--model', type=str, default='JDBNet')
-parse.add_argument('--expID', type=str, default='JDBNet')
+parse.add_argument('--model', type=str, default='JBDNet')
+parse.add_argument('--expID', type=str, default='JBDNet')
 parse.add_argument('--ckpt_period', type=int, default=50)
 
 "-------------------optimizer option-----------------------"
